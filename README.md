@@ -25,7 +25,7 @@ On Ethereum/Polygon/Arbitrum/Solana, a smart contract cannot call an external AP
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/sentinel-claim.git
+git clone https://github.com/daksh777f/sentinel-claim.git
 cd sentinel-claim
 
 # Install dependencies (root and frontend)
@@ -54,9 +54,6 @@ Create a `.env` file in the root directory and configure the following variables
 
 ## Deployed Addresses (Testnet)
 - **SentinelClaim:** [0x85F6e96b92776b0aAd00287BFBaB86eFeDBC9625](https://shannon-explorer.somnia.network/address/0x85F6e96b92776b0aAd00287BFBaB86eFeDBC9625)
-
-## Demo
-[Watch the Demo Video](https://youtube.com/placeholder)
 
 ## Tech Stack
 - **Smart Contracts:** Solidity 0.8.30, Hardhat
