@@ -13,7 +13,7 @@
     "deploy:mainnet": "hardhat run scripts/deploy.js --network somnia_mainnet",
     "verify": "hardhat verify --network somnia_testnet",
     "dev": "cd frontend && npm run dev",
-    "build": "cd frontend && npm run build"
+    "build": "cd frontend && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
