@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=JetBrains+Mono&family=Outfit:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-textMain font-body antialiased;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-textHeading font-heading font-semibold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card rounded-[12px] border border-white/5 shadow-sm transition-all duration-200;
+  }
+  .glass-card:hover {
+    @apply shadow-glow border-primary/20;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-black font-bold py-2 px-4 rounded-[8px] transition-all duration-200 hover:shadow-glow active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+}
+
+/* Animations */
+@keyframes pulse-travel {
+  0% { left: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+.animate-pulse-travel {
+  animation: pulse-travel 3s infinite linear;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out forwards;
+}

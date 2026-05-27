@@ -1,0 +1,30 @@
+{
+  "name": "sentinel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network somnia_testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network somnia_mainnet",
+    "verify": "hardhat verify --network somnia_testnet",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "hardhat": "^2.28.6"
+  },
+  "dependencies": {
+    "@somnia-chain/reactivity-contracts": "^0.2.0",
+    "dotenv": "^17.4.2"
+  }
+}
