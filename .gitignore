@@ -3,3 +3,26 @@ node_modules
 cache
 artifacts
 frontend/dist
+
+# Secrets
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+
+# Logs
+*.log
+
+# Node
+dist/
+build/
+.next/
+out/
+.vercel/
+npm-debug.log*
+yarn-error.log*
